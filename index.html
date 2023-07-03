@@ -2,53 +2,68 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Itacerâmica - Produtos em cerâmica</title>
 </head>
 <body>
-  <header>
-    <a href="index.html"><h1>Itacerâmica</h1></a>
-    <nav>
-      <a href="index.html#ceramica-vermelha">Cerâmica vermelha</a> |
-      <a href="index.html#ceramica-branca">Cerâmica branca</a> |
-      <a href="index.html#revestimento">Revestimento</a> |
-      <a href="index.html#cimento-e-cal">Cimento e cal</a>
-    </nav>
-    <a href="fale-conosco.html">Envie seu feedback sobre o site</a>
+  <header class="col-12">
+    <div class="col-12 help-info">
+      <a href="fale-conosco.html">Envie seu feedback sobre o site</a>
+    </div>
+    <div class="header center">
+      <a href="index.html"><h1 class="homepage">Itacerâmica</h1></a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html#ceramica-vermelha">Cerâmica vermelha</a></li>
+          <li><a href="index.html#ceramica-branca">Cerâmica branca</a></li>
+          <li><a href="index.html#revestimento">Revestimento</a></li>
+          <li><a href="index.html#cimento-e-cal">Cimento e cal</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
-  <hr>
-  <main>
+  <main class="center">
     <section id="ceramica-vermelha">
       <h2>Cerâmica vermelha</h2>
-      <hr>
-      <div class="produtos">
-        <a href="produtos/bloco-ceramico.html">
-          <div class="card-produto">
-            <img src="imagens/small-images/bloco-ceramico.jpg" alt="Bloco cerâmico vermelho">
+      <div class="produtos col-12">
+        <div class="card-produto col-3">
+          <img src="imagens/small-images/bloco-ceramico.jpg" alt="Bloco cerâmico vermelho">
+          <a href="produtos/bloco-ceramico.html">
             <p>Bloco cerâmico vedação 9x19x19cm</p>
             <p>Preço: R$0,89/UN</p>
-          </div>
-        </a>
-        <a href="produtos/tijolo-comum.html">
-          <div class="card-produto">
-            <img src="imagens/small-images/tijolo-comum.jpg" alt="Tijolo comum vermelho">
+          </a>
+        </div>
+        <div class="card-produto col-3">
+          <img src="imagens/small-images/tijolo-comum.jpg" alt="Tijolo comum vermelho">
+          <a href="produtos/tijolo-comum.html">
             <p>Tijolo comum vermelho 8,7x4,3x18,6cm</p>
             <p>Preço: R$ 0,59/UN</p>
-          </div>
-        </a>
-        <a href="produtos/telha-ceramica.html">
-          <div class="card-produto">
-            <img src="imagens/small-images/telha-ceramica.jpg" alt="Telha cerâmica portuguesa">
+          </a>
+        </div>
+        <div class="card-produto col-3">
+          <img src="imagens/small-images/telha-ceramica.jpg" alt="Telha cerâmica portuguesa">
+          <a href="produtos/telha-ceramica.html">
             <p>Telha cerâmica portuguesa 40,40x24,10cm</p>
             <p>Preço: R$ 1,99/UN</p>
-          </div>
-        </a>
+          </a>
+        </div>
+        <div class="card-produto col-3">
+          <img src="imagens/small-images/telha-ceramica.jpg" alt="Telha cerâmica portuguesa">
+          <a href="produtos/telha-ceramica.html">
+            <p>Telha cerâmica portuguesa 40,40x24,10cm</p>
+            <p>Preço: R$ 1,99/UN</p>
+          </a>
+        </div>
       </div>
     </section>
     
     <section id="ceramica-branca">
       <h2>Cerâmica branca</h2>
-      <hr>
       <div class="produtos">
         <a href="produtos/vaso-sanitario.html">
           <div class="card-produto">
@@ -76,7 +91,6 @@
     
     <section id="revestimento">
       <h2>Materiais de revestimento</h2>
-      <hr>
       <div class="produtos">
         <a href="produtos/pastilha-de-vidro.html">
           <div class="card-produto">
@@ -104,7 +118,6 @@
     
     <section id="cimento-e-cal">
       <h2>Cimento e cal</h2>
-      <hr>
       <div class="produtos">
         <a href="produtos/cimento-comum.html">
           <div class="card-produto">
