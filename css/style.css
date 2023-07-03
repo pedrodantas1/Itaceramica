@@ -150,7 +150,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   background-color: var(--azul-escuro);
   padding: 16px;
   border-radius: 12px;
@@ -160,19 +160,20 @@ section {
 .card-produto {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 200px;
   border: 1px solid var(--cinza-hover);
-  max-width: 25%;
   overflow: hidden;
 }
 
-.card-produto img {
+.card-produto a {
   display: block;
-  max-width: 200px;
+  height: 150px; /* analisar */
+  padding: 14px 10px;
 }
 
-.card-produto a {
-
+.card-produto p {
+  color: #fff;
+  margin-top: 8px;
 }
