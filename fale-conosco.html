@@ -2,41 +2,58 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/feedback.css">
+  <link rel="stylesheet" href="css/general-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Itacerâmica - Fale conosco</title>
 </head>
 <body>
-  <header>
-    <a href="index.html"><h1>Itacerâmica</h1></a>
-    <nav>
-      <a href="index.html#ceramica-vermelha">Cerâmica vermelha</a> |
-      <a href="index.html#ceramica-branca">Cerâmica branca</a> |
-      <a href="index.html#revestimento">Revestimento</a> |
-      <a href="index.html#cimento-e-cal">Cimento e cal</a>
-    </nav>
-    <a href="fale-conosco.html">Envie seu feedback sobre o site</a>
+  <header class="col-12">
+    <div class="help-info">
+      <a href="fale-conosco.html">Envie seu feedback sobre o site</a>
+    </div>
+    <div class="header center">
+      <a href="index.html"><h1 class="homepage">Itacerâmica</h1></a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html#ceramica-vermelha">Cerâmica vermelha</a></li>
+          <li><a href="index.html#ceramica-branca">Cerâmica branca</a></li>
+          <li><a href="index.html#revestimento">Revestimento</a></li>
+          <li><a href="index.html#cimento-e-cal">Cimento e cal</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
-  <hr>
-  <main>
-    <h2>Fale conosco</h2>
-    <p>Diga-nos o que achou do site e quais melhorias poderiam ser realizadas.</p>
-    <form action="mailto:pedrood1232@gmail.com" method="POST">
-      <label for="nome">Nome:</label>
-      <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
-      <br>
-      <label for="email">Email:</label>
-      <input type="text" name="email" id="email" placeholder="Seu email" required>
-      <br>
-      <label for="mensagem">Mensagem:</label>
-      <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="2" cols="40" minlength="5" required></textarea>
-      <br>
-      <input type="submit" value="Enviar mensagem &raquo;">
-    </form>
+
+  <main class="center">
+    <div class="form-head">
+      <h2>Fale conosco</h2>
+      <p>Diga-nos o que achou do site e quais melhorias poderiam ser realizadas.</p>
+    </div>
+    <div class="form-container">
+      <form action="mailto:pedrood1232@gmail.com" method="POST" class="form-control col-6">
+        <div class="form-name">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="form-email">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" placeholder="Seu email" required>
+        </div>
+        <div class="form-mensagem">
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="2" cols="40" minlength="5" required></textarea>
+        </div>
+        <input type="submit" value="Enviar mensagem &raquo;">
+      </form>
+    </div>
   </main>
   
-  <hr>
-  <footer>
-    <span>&copy; 2023 Itacerâmica - Todos os direitos reservados.</span>
+  <footer class="footer">
+    <span class="footer-text">&copy; 2023 Itacerâmica - Todos os direitos reservados.</span>
   </footer>
 </body>
 </html>

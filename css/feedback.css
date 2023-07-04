@@ -1,0 +1,48 @@
+.form-head {
+  padding: 0 12px;
+  margin: 20px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-head > * {
+  color: var(--azul-escuro);
+}
+
+.form-head h2 {
+  margin-bottom: 16px;
+}
+
+.form-head p {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-name {
+  width: 100%;
+  display: inline-block;
+}
+
+.form-name label {
+  font-size: 1.25rem;
+  margin-right: 8px;
+}
+
+.form-name input {
+  padding: 6px;
+  font-size: 1.125rem;
+}
