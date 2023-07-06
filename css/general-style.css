@@ -45,8 +45,9 @@ a {
 
 /* Definiçoes do layout */
 .center {
-  width: 86%;
-  margin: auto;
+  width: 95vw;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 /* Desktop */
@@ -143,6 +144,7 @@ a {
 
 .footer {
   padding: 24px 0;
+  margin-top: 100px;
   background-color: var(--azul-escuro);
   display: flex;
   justify-content: center;
