@@ -1,0 +1,9 @@
+section {
+  padding: 0 12px;
+  margin: 16px 0;
+}
+
+section h2 {
+  color: var(--azul-escuro);
+  font-size: 1.5rem;
+}

@@ -116,8 +116,7 @@ a {
   }
 }
 
-
-/* Tablets */
+/* Tablets e telas menores */
 @media only screen and (max-width: 768px) {
   .homepage {
     text-align: center;
