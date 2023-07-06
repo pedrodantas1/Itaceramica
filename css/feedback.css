@@ -28,12 +28,17 @@
 }
 
 .form-container {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
   background-color: var(--azul-escuro);
   padding: 20px;
+}
+
+form {
+  width: 100%;
 }
 
 label {
@@ -67,4 +72,16 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  input[type=submit] {
+    width: 100%;
+  }
 }

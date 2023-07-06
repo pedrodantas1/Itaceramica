@@ -11,7 +11,7 @@
   <title>Itacerâmica - Fale conosco</title>
 </head>
 <body>
-  <header class="col-12">
+  <header>
     <div class="help-info">
       <a href="fale-conosco.html">Envie seu feedback sobre o site</a>
     </div>
@@ -34,19 +34,19 @@
         <h2>Fale conosco</h2>
         <p>Diga-nos o que achou do site e quais melhorias poderiam ser realizadas.</p>
       </div>
-      <div class="form-container col-8">
+      <div class="form-container">
         <form action="mailto:pedrood1232@gmail.com" method="POST">
           <div class="form-name">
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" autocomplete="name" required>
           </div>
           <div class="form-email">
             <label for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Seu email" required>
+            <input type="text" name="email" id="email" placeholder="Seu email" autocomplete="email" required>
           </div>
           <div class="form-mensagem">
             <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="2" cols="40" minlength="5" required></textarea>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="4" required></textarea>
           </div>
           <div class="form-button">
             <input type="submit" value="Enviar mensagem &raquo;">

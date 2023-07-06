@@ -29,10 +29,6 @@ h4 {
   font-size: 1.25rem;
 }
 
-p {
-  font-size: 1rem;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -48,43 +44,6 @@ a {
   width: 95vw;
   max-width: 1140px;
   margin: 0 auto;
-}
-
-/* Desktop */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/* Tablets */
-@media only screen and (max-width: 768px) {
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-/* Smartphones */
-@media only screen and (max-width: 600px) {
-  [class*="col-"] {
-    width: 100%;
-  }
 }
 
 .help-info {
@@ -103,15 +62,9 @@ a {
   margin-right: 12px;
 }
 
-.help-info a:hover {
-  text-decoration: underline;
-  color: var(--cinza);
-}
-
 .header {
   background-color: #fff;
   padding: 12px;
-  margin-bottom: 16px;
   box-shadow: rgba(60, 55, 56, 0.07) 0px 0px 0px 1px, rgba(60, 55, 56, 0.07) 0px 0px 1px 0px, 
               rgba(60, 55, 56, 0.07) 0px 2px 2px 0px;
 }
@@ -124,7 +77,6 @@ a {
 .navbar ul {
   overflow: hidden;
   display: flex;
-  align-items: center;
 }
 
 .navbar a {
@@ -135,11 +87,6 @@ a {
   color: var(--azul-escuro);
   font-weight: bold;
   border-bottom: 3px solid transparent;
-}
-
-.navbar a:hover {
-  border-bottom: 3px solid var(--azul-escuro);
-  color: var(--cinza);
 }
 
 .footer {
@@ -153,5 +100,30 @@ a {
 
 .footer-text {
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
+}
+
+/* Alguns efeitos apenas em desktop */
+@media only screen and (min-width: 900px) {
+  .help-info a:hover {
+    text-decoration: underline;
+    color: var(--cinza);
+  }
+
+  .navbar a:hover {
+    border-bottom: 3px solid var(--azul-escuro);
+    color: var(--cinza);
+  }
+}
+
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+  .homepage {
+    text-align: center;
+  }
+
+  .navbar ul {
+    display: block;
+  }
 }
