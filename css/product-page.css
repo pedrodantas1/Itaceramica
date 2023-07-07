@@ -3,7 +3,37 @@ section {
   margin: 16px 0;
 }
 
-section h2 {
+.container-breadcrumb {
+  border-bottom: 1px solid var(--azul-escuro);
+}
+
+.breadcrumb ul {
+  padding: 10px 16px;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  color: var(--azul-escuro);
+  font-size: 1.125rem;
+}
+
+.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--cinza);
+  content: "\003E\003E";
+}
+
+.breadcrumb li a {
+  color: var(--azul-escuro);
+}
+
+.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.main-produto h2 {
   color: var(--azul-escuro);
   font-size: 1.5rem;
+  text-align: center;
 }
