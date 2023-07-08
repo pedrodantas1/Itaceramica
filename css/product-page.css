@@ -248,6 +248,15 @@ section {
 }
 
 @media only screen and (max-width: 425px) {
+  .header-produto h2 {
+    text-align: center;
+  }
+
+  .descricao-detalhada h3 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
   .container-table th, .container-table td {
     display: block;
     width: 100%;
