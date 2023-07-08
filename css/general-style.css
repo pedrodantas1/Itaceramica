@@ -41,7 +41,7 @@ a {
 
 /* Definiçoes do layout */
 .center {
-  width: 95vw;
+  width: 94vw;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -90,7 +90,7 @@ a {
 }
 
 .footer {
-  padding: 24px 0;
+  padding: 24px 12px;
   margin-top: 100px;
   background-color: var(--azul-escuro);
   display: flex;
@@ -101,6 +101,7 @@ a {
 .footer-text {
   color: #fff;
   font-size: 0.75rem;
+  text-align: center;
 }
 
 /* Alguns efeitos apenas em desktop */
@@ -124,5 +125,15 @@ a {
 
   .navbar ul {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .help-info a {
+    font-size: 0.625rem;
+  }
+
+  .homepage {
+    font-size: 1.875rem;
   }
 }

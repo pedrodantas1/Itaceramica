@@ -34,6 +34,7 @@ section h2 {
 
 .card-img img {
   display: block;
+  width: 100%;
 }
 
 .container-card-text {
@@ -66,16 +67,12 @@ section h2 {
 }
 
 @media only screen and (max-width: 425px) {
-  .produtos {
-    display: block;
-  }
-
-  .card-produto:not(:last-child) {
-    margin-bottom: 12px;
+  section h2 {
+    font-size: 1.5rem;
   }
 
   .card-produto {
-    height: 320px;
+    height: auto
   }
 
   .card-text > * {
@@ -83,4 +80,7 @@ section h2 {
     text-overflow: ellipsis;
   }
 
+  .card-text span {
+    margin-top: 24px;
+  }
 }

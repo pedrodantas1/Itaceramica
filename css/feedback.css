@@ -21,6 +21,7 @@
 
 .form-head h2 {
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .form-head p {
@@ -81,6 +82,10 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 425px) {
+  .form-head h2 {
+    font-size: 1.5rem;
+  }
+
   input[type=submit] {
     width: 100%;
   }
