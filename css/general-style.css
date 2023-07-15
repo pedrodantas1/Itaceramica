@@ -1,16 +1,22 @@
 :root {
   --azul-escuro: #102739;
+  --azul-escuro-hover: #0d1f2e;
   --cinza: #999;
   --marrom-claro: #e3b18b;
+  --branco-hover: #e6e6e6;
 }
 
-* {
+*, ::after, ::before {
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
 h1 {
@@ -71,22 +77,28 @@ a {
 
 .homepage {
   color: var(--azul-escuro);
-  margin-bottom: 12px;
+  margin: 0;
 }
 
-.navbar ul {
-  overflow: hidden;
-  display: flex;
+.nav-space {
+  margin-left: 24px;
 }
 
-.navbar a {
-  display: block;
-  font-size: 1.125rem;
-  text-align: center;
-  padding: 14px 12px;
-  color: var(--azul-escuro);
+.nav-link {
   font-weight: bold;
-  border-bottom: 3px solid transparent;
+  padding-top: 12px;
+}
+
+.btn-search {
+  color: #fff;
+  background-color: var(--azul-escuro);
+  border-color: var(--azul-escuro);
+}
+
+.btn-search:hover {
+  color: var(--branco-hover);
+  background-color: var(--azul-escuro-hover);
+  border-color: var(--azul-escuro-hover);
 }
 
 .footer {
@@ -105,27 +117,16 @@ a {
 }
 
 /* Alguns efeitos apenas em desktop */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
   .help-info a:hover {
     text-decoration: underline;
-    color: var(--cinza);
-  }
-
-  .navbar a:hover {
-    border-bottom: 3px solid var(--azul-escuro);
     color: var(--cinza);
   }
 }
 
 /* Tablets e telas menores */
 @media only screen and (max-width: 768px) {
-  .homepage {
-    text-align: center;
-  }
-
-  .navbar ul {
-    display: block;
-  }
+  
 }
 
 @media only screen and (max-width: 425px) {
@@ -134,6 +135,6 @@ a {
   }
 
   .homepage {
-    font-size: 1.875rem;
+    font-size: 1.625rem;
   }
 }
