@@ -17,6 +17,7 @@
       <a href="fale-conosco.html">Envie seu feedback sobre o site</a>
     </div>
     <div class="header center">
+      <!-- Navbar dinamica -->
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><h1 class="homepage">Itacerâmica</h1></a>
@@ -56,6 +57,50 @@
   </header>
   
   <main class="center">
+    <!-- Carrossel -->
+    <div class="container-carrossel">
+      <div id="homeCarousel" class="carousel carousel-dark slide config-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+              <source media="(max-width: 480px)" srcset="imagens/carrossel/img1-carrossel-p.webp" class="d-block w-100" alt="Liquidação da casa com ate 70% de desconto">
+              <img src="imagens/carrossel/img1-carrossel-g.webp" class="d-block w-100" alt="Liquidação da casa com ate 70% de desconto">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 480px)" srcset="imagens/carrossel/img2-carrossel-p.webp" class="d-block w-100" alt="Pisos e porcelanatos com até 40% de desconto">
+              <img src="imagens/carrossel/img2-carrossel-g.webp" class="d-block w-100" alt="Pisos e porcelanatos com até 40% de desconto">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 480px)" srcset="imagens/carrossel/img3-carrossel-p.webp" class="d-block w-100" alt="Cama, mesa e banho com até 30% de desconto">
+              <img src="imagens/carrossel/img3-carrossel-g.webp" class="d-block w-100" alt="Cama, mesa e banho com até 30% de desconto">
+            </picture>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+
+
+
+
     <section id="ceramica-vermelha">
       <h2>Cerâmica vermelha</h2>
       <div class="produtos">
