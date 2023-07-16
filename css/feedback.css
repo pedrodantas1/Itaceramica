@@ -8,7 +8,7 @@
 
 .form-head {
   padding: 0 12px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .form-head h2 {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
