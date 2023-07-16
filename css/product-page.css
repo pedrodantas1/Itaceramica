@@ -48,6 +48,8 @@ section {
 }
 
 .header-produto .divisor {
+  margin: 0;
+  opacity: 1;
   width: 100px;
   height: 5px;
   background-color: var(--azul-escuro);
@@ -85,7 +87,7 @@ section {
 }
 
 .descricao-produto {
-  margin: 32px 0;
+  margin-top: 32px;
 }
 
 .descricao-title {
@@ -177,7 +179,7 @@ section {
 }
 
 .descricao-detalhada {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .descricao-detalhada h3 {
