@@ -1,6 +1,5 @@
 section {
   padding: 0 12px;
-  margin: 16px 0;
 }
 
 .container-breadcrumb {
@@ -84,6 +83,61 @@ section {
   max-width: 380px;
   width: 100%;
   display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.img-produto img:hover {
+  opacity: 0.7;
+}
+
+/* Modal da imagem */
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(1)}
+  to {-webkit-transform:scale(2)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0.4)}
+  to {transform:scale(1)}
+}
+
+@-webkit-keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(0)}
+}
+
+@keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(0)}
+}
+
+.modal-img {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.out {
+  animation-name: zoom-out;
+  animation-duration: 0.6s;
 }
 
 .descricao-produto {
@@ -252,6 +306,10 @@ section {
 @media only screen and (max-width: 425px) {
   .header-produto h2 {
     text-align: center;
+  }
+
+  .modal-content {
+    width: 90%;
   }
 
   .descricao-detalhada h3 {
